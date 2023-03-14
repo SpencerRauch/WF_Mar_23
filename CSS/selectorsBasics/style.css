@@ -1,0 +1,74 @@
+/* 
+
+how to apply css:
+
+selector {
+    property: value;
+    property_two: value;
+}
+
+types of selectors: 
+
+* -- targets EVERYTHING 
+element -- targets all elements of that type
+. -- targets classes, we can use classes multiple times and multiple per element
+# -- targets ids
+
+selectors are applied by specificity, more the specific, more weight
+
+*/
+
+* {
+    color: rebeccapurple;
+    /* background-color: whitesmoke; */
+    text-align: center;
+}
+
+
+h1 {
+    color: blue;
+    font-size: 30pt;
+}
+
+.red_text {
+    color: rgb(255,0,0);
+    background-color: black;
+}
+
+#third_h1 {
+    color: pink;
+}
+
+#special_p {
+    text-decoration:line-through;
+}
+
+.parent {
+    background-color: blanchedalmond;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 2px black solid;
+    /* border-radius: 20px; this to round corners*/
+    border-radius: 50%; 
+}
+
+
+div.parent > p{
+    color: rgb(75, 207, 109);
+    font-size: 20pt;
+}
+
+[type="text"] { /* this is how we can select by attribute values */
+    color:black
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
