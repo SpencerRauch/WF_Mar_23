@@ -49,6 +49,7 @@ ul {
     /* width: 100%; */
     background-color: blue;
     margin: 5px;
+    overflow: hidden;
 }
 
 .col1{
