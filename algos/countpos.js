@@ -5,6 +5,7 @@ var numbers = [3, 4, -2, 7, 16, -8, 0];
 
 
 console.log("there are " + countPositives + " positive values");
+
 /*
 Bonus Challenges:
 Level 1: Write this as a function that accepts arrays as parameters.
