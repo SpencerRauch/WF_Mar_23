@@ -27,6 +27,11 @@ const arr5 = [];
 const idx5 = 2;
 const expected5 = null;
 
+// RIOT method
+// Read Input Output Talk
+
+
+
 /**
  * Retrieves the nth to last indexed item from the given array.
  * - Time: O(?).
@@ -36,7 +41,11 @@ const expected5 = null;
  * @returns {any} The item at the nthToLast index or null.
  */
 function nthLast(items, nthToLast) {
-    //your code here
+    var idx = items.length - nthToLast
+    if (idx >= 0 && idx < items.length){ // if the idx is within the bounds of the array
+        return items[idx] //returning the value at that index
+    }
+    return null //else return null
 }
 
 // Tests
