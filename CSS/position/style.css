@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  .container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 4px 4px 4px grey;
+  }
+  h1 {
+    font-size: 50px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  p {
+    margin: 20px 0;
+    font-size: 1.1rem;
+  }
+  #message {
+    width: inherit;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 4px 4px 4px grey;
+    /* change the position properties here */
+    /* position: 
+    fixed: stays in one spot relative to the viewport, will appear above content, doesn't take up any space for itself
+
+    absolute: stays in one spot relative to the content, doesn't take up any space for itself
+
+    relative: positioned relative to where it would normally render, takes up the space where it would normally render
+
+    sticky: renders where it normally would, sticks based
+
+    */
+    position:sticky; 
+    top: 0px;
+    /* left: 20px;  */
+    /* top:
+    left:
+    right: */
+  }
+  #message * {
+    margin: 10px;
+  }
+  #message .header {
+    margin: 0px;
+    background-color: #ddd;
+    padding: 10px;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-between;
+  }
+  #message button {
+    height: 30px;
+    width: 80px;
+  }
