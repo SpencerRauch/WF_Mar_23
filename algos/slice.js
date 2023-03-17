@@ -16,10 +16,10 @@ const startIdx2 = 0;
 const endIdx2 = 1;
 const expected2 = ["a"];
 
-const arr3 = ["a", "b", "c", "d", "e"];
+const arr3 = [12, 24, 36, 48, 60];
 const startIdx3 = 1;
 const endIdx3 = 3;
-const expected3 = ["b", "c"];
+const expected3 = [24, 36];
 
 const arr4 = ["a", "b", "c", "d", "e"];
 const startIdx4 = -100;
