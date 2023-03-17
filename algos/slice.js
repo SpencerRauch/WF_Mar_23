@@ -36,16 +36,7 @@ const startIdx6 = 1;
 const endIdx6 = 1;
 const expected6 = [];
 
-/**
- * Returns a slice of given arr.
- * - Time: O(?).
- * - Space: O(?).
- * @param {Array<any>} items
- * @param {number} startIdx
- * @param {number} endIdx
- * @returns {Array<any>} The slice of the given arr from startIdx inclusive
- *    to endIdx.
- */
+
 function slice(items, startIdx, endIdx) {
     //your code here
 }
