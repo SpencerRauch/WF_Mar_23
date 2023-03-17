@@ -16,6 +16,7 @@ const startIdx2 = 0;
 const endIdx2 = 1;
 const expected2 = ["a"];
 
+//            0   1    2   3   4
 const arr3 = [12, 24, 36, 48, 60];
 const startIdx3 = 1;
 const endIdx3 = 3;
@@ -38,7 +39,20 @@ const expected6 = [];
 
 
 function slice(items, startIdx, endIdx) {
-    //your code here
+    if (startIdx < 0) { //check start index is in range and adjust if not
+        startIdx = 0;
+    }
+
+    if (endIdx > items.length) { // check end index is in range and adjust if not
+        endIdx = items.length
+    }
+
+    var newArr = [] //create new array
+    for (var i = startIdx; i < endIdx; i++) { // fill it with just items between start and end
+        newArr.push(items[i])
+    }
+
+    return newArr //return the new arr
 }
 
 // Tests
