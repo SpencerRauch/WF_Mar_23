@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 onclick="changeBg(this)">Let's get some scripts goin!</h1>
+    <select onchange="toggleMode(this)" name="display" id="display">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+    <button onclick="myAlert(this)">Click me!</button>
+    <div class="row">
+        <img onmouseover="over(this)" onmouseout="out(this)" src="http://placekitten.com/200/300" alt="a cat">
+        <img onmouseover="over(this)" onmouseout="out(this)" src="http://placekitten.com/200/300" alt="a cat">
+        <img onmouseover="over(this)" onmouseout="out(this)" src="http://placekitten.com/200/300" alt="a cat">
+    </div>
+    <div class="row" id="boxes">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+    </div>
+    <div class="row" >
+        <button onclick="removeBox('#box1')">1</button>
+        <button onclick="removeBox('#box2')">2</button>
+        <button onclick="removeBox('#box3')">3</button>
+    </div>
+    <button onclick="oneByOne()">Remove One By One</button>
+    <script src="script.js"></script>
+    
+</body>
+</html>
