@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic 8ball</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>Now answering: <span id="currentQuestion"></span></p>
+    <div id="ball">
+        <div id="viewPort">
+            <p id="responseField"></p>
+        </div>
+    </div>
+    <label for="questionInput">Ask A Question!</label>
+    <input type="text" name="questionInput" id="questionInput">
+    <button id="askButton" onclick="consultEightBall()">Ask The 8ball</button>
+    <script src="script.js"></script>
+</body>
+</html>
