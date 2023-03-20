@@ -10,7 +10,7 @@
 
 function d6() { //roll a six sided die
     var roll = Math.random();
-    // your code here
+    roll = Math.floor(roll * 6) + 1
     return roll;
 }
     
@@ -46,7 +46,8 @@ var lifesAnswers = [
 ];
 
 function consult(){
-    //Your code here
+    var index = Math.floor(Math.random()*lifesAnswers.length)
+    return lifesAnswers[index]
 }
 
 console.log(consult());
