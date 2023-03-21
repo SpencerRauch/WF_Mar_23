@@ -34,13 +34,13 @@ for(var i=0; i<pokemon.length; i++) {
     }
 }
 
-// console.log the pokemon objects whose id is evenly divisible by 3 <-- modulo returns!
+// console.log the **pokemon objects** whose id is evenly divisible by 3 <-- modulo returns!
 console.log("\n pokemon objects with an id divisible by 3:")
 //Your code here
 
 
 
-// console.log the pokemon objects that have more than one type
+// console.log the **pokemon objects** that have more than one type
 console.log("\n pokemon objects with more than one type")
 //Your code here
 
