@@ -36,25 +36,60 @@ for(var i=0; i<pokemon.length; i++) {
 
 // console.log the **pokemon objects** whose id is evenly divisible by 3 <-- modulo returns!
 console.log("\n pokemon objects with an id divisible by 3:")
-//Your code here
+for(var i=0; i<pokemon.length; i++) {
+    if(pokemon[i].id % 3 == 0) {
+        console.log(pokemon[i]);
+    }
+}
 
 
 
 // console.log the **pokemon objects** that have more than one type
 console.log("\n pokemon objects with more than one type")
-//Your code here
+for(var i=0; i<pokemon.length; i++) {
+    if(pokemon[i].types.length > 1) {
+        console.log(pokemon[i]);
+    }
+}
+
 
 
 
 // console.log the **names** of the pokemon whose only type is "poison"
 console.log("\n pokemon names with only one type, poison:")
-//Your code here
+for(var i=0; i<pokemon.length; i++) {
+    if(pokemon[i].types.length === 1 && pokemon[i].types[0] === "poison") {
+        console.log(pokemon[i].name);
+    }
+}
+
 
 
 
 // console.log the **first type** of all the pokemon whose second type is "flying"
 console.log("\n First type of all pokemon whose second type is flying")
+for(var i=0; i<pokemon.length; i++) {
+    if( pokemon[i].types[1] == "flying") {
+        console.log(pokemon[i].types[0]);
+    }
+}
+
 //Your code here
 
 //Bonus Challenge: console.log the reverse of the names of the pokemon whose only type is "poison"
+for(var i=0; i<pokemon.length; i++) {
+    if(pokemon[i].types.length == 1 && pokemon[i].types[0] == "poison") {
+        var thisName = pokemon[i].name;
+        var reversed = ""
+        for (var j = 0; j < thisName.length; j++){
+            reversed = thisName[j] + reversed;
+        }
+        console.log(reversed)
+    }
+}
+
+var string = "cake"
+string = string.split("").reverse().join("")
+console.log(string)
+
 
