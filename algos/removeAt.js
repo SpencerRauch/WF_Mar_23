@@ -16,6 +16,7 @@ const expected1 = "b";
 // after function call, arr1 should be:
 const arr1Expected = ["a", "c", "d", "e"];
 
+//             0    1     2
 const arr2 = ["a", "b", "c"];
 const removeIdx2 = 3;
 const expected2 = null;
@@ -42,6 +43,15 @@ const arr4Expected =  ["cake", "pie", "cookies", "candy"];
  */
 function removeAt(items, idx) {
   //your code here
+  if (idx < 0 || idx > items.length -1) return null //if idx is out of range, return null
+
+  let removed = items[idx] // store item to be removed for returning later
+
+  for (let i = idx; i < items.length -1; i++){
+    items[i] = items[i+1] //shift all values after the idx to the left, leaving an extra item at the end
+  }
+  items.pop() //which we can then remove
+  return removed //return removed value
 }
 
 // Tests
