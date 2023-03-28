@@ -35,8 +35,7 @@ const arr4Expected =  ["cake", "pie", "cookies", "candy"];
  * Removes and returns the item at the given idx from the given array and
  * shifts the remaining items to fill the empty space created by the item
  * being removed.
- * - Time: O(?).
- * - Space: O(?).
+
  * @param {Array<any>} items
  * @param {number} idx Index of the item to be removed.
  * @returns {any} The removed item.
