@@ -1,5 +1,5 @@
 /* 
-Challenge: Create Pascal's Triangle
+Challenge: Create Pascal's Triangle see: https://www.mathsisfun.com/pascals-triangle.html
 
 Your task is to write a JavaScript function that takes an integer n as input and returns an array of arrays 
 that represents the first n rows of Pascal's triangle.
@@ -25,7 +25,7 @@ hint: How many digits are in row n?
 
 
 function generatePascalsTriangle(n) {
-    //Your code here
+
 }
 
 
